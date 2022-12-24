@@ -25,5 +25,24 @@ function kolobok(persons) {
     }
 }
 
-let persons = 'дедушка';
+let persons = 'заяц';
 kolobok(persons);
+
+/* В файле tale.js cоздать функцию newYear.
+Функция на вход принимает имя персонажа. Дед Мороз или Снегурочка.
+Функция возвращает: "Дед Мороз! Дед Мороз! Дед Мороз!" или "Снегурочка! Снегурочка! Снегурочка!";
+*/
+let moroz = 'Дед Мороз!';
+let snegurochka = 'Снегурочка!';
+
+function newYear(character) {
+    if (character === 'Дед Мороз') {
+        console.log(`${moroz + moroz + moroz}`);
+    }
+    else {
+        console.log(`${snegurochka + snegurochka + snegurochka}`);
+    }
+}
+
+let character = 'Дед Мороз';
+newYear(character);
